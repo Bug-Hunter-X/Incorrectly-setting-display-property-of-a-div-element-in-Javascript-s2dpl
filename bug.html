@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not be visible.
+  </div>
+  <script>
+    // Incorrectly using display: none; on the div in Javascript, the correct way is to manipulate the style object's display property
+    document.getElementById("myDiv").style.display = "none";
+  </script>
+</body>
+</html>
